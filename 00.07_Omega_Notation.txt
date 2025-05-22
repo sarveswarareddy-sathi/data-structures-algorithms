@@ -1,0 +1,11 @@
+/*
+OMEGA Notation : Situations where we have a LOWER BOUND
+--> f(n) = OMEGA(g(n)) iff there exist constants C (where C > 0) and n0 (where n0 >= 0) such that c*g(n) <= f(n) 
+for all n >= n0
+--> like, after certain value of n0, the expression will have smaller value.
+--> {n^2, 2n^2+5, 1000n^2, 2n^3+n, ..... } : OMEGA(n^2)
+--> U{2n+3, 100n+logn,.......} : OMEGA(n)
+--> U{5000, (10)^5, log2000,.........} : OMEGA(1)
+
+If f(n) = O(G(n)) then g(n) = OMMEGA(f(n))
+*/
