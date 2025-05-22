@@ -1,0 +1,20 @@
+
+O() - either exact or upper bound
+OMEGA() - either exact or lower bound
+Theta() - exact
+
+--> Theata Notation - f(n) = O(g(n)) iff there exists constants C1, C2 where C1 > 0 and C2 > 0 and n0 where 
+n0 >= 0 such that C1g(n) <= f(n) <= C2g(n) for all n >= n0.
+
+Example : f(n) = 2n + 3 : THETA(n)
+C1 = 1, C2 = 3;
+1xn <= 2n + 3 <= 3n --> n >= 0 & n >= 3
+--> n0 = 3
+
+1000n^2 + 100nlogn + 2n : THETA(n^2)
+200n^3 + 30n + 5 : THETA(n^3)
+200n + 2*logn : THETA(n)
+
+--> If f(n) = THETA(g(n))  then f(n) = O(g(n)) and f(n) = OMEGA(g(n))
+and g(n) = O(f(n)) and g(n) = OMEGA(f(n));
+
