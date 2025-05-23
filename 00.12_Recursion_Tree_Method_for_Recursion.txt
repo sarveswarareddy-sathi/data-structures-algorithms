@@ -1,0 +1,15 @@
+
+Recursion Tree Method for Solving Recurrences :
+1. We consider the recursion tree and compute total work done
+2. We write non-recursive part as root of the tree and write the recursive part as childeren
+3. We keep expanding until we see a pattern
+
+Example :
+    T(n) = 2*T(n/2) + C*n
+    T(1) = C
+
+            Cn              ---> Cn
+        Cn/2    Cn/2        ---> Cn
+    Cn/4  Cn/4  Cn/4  Cn/4  ---> Cn --> T(1)
+
+Count height of the tree - floor(logn) + 1 = THETA(logn)
