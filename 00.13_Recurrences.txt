@@ -1,0 +1,44 @@
+1. Write non-recursive part as root and update to constant T(1) while traversing
+
+---> Given, T(n) = 2*T(n-1) + C
+                T(1) = C
+
+                    C               --> C   
+            T(n-1)      T(n-1)      --> 2C
+
+
+                    C               --> C
+                C       C           --> 2C
+        T(n-2)  T(n-2)  T(n-2)  T(n-2)  -->4C
+
+C + 2C + 4C + ........ = c(1+2+4+.....)
+GOEMETRIC SERIES = a(r^n - 1) / (r-1) ; r- common ratio
+----> THETA(2^n)
+
+---> Given, T(n) = T(n/2) + C
+            T(1) = C
+
+        C
+        T(n/2)
+
+    C+C+C+.......C
+    (log2n) + 1
+
+    same scenario for binary search algo
+
+
+---> Given, T(n) = 2T(n/2) + C
+            T(1) = C
+
+            C
+
+        T(n/2)  T(n/2)  --> 2c
+
+
+                C
+        T(n/2)      T(n/2)
+T(n/4) T(n//4)  T(n/4)  T(n/4)
+
+C, 2C, 4C,......
+GOEMETRIC SERIES = a(r^(LOG{2}{n}) - 1) / (r-1) ; r- common ratio
+THETA(n)
