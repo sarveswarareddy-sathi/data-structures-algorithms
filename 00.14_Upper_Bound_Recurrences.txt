@@ -1,0 +1,20 @@
+Given, T(n) = T(n/4) + T(n/2) + C*n
+        T(1) = C
+
+    Cn, 3Cn/4, 9Cn/16,............
+    
+    --> Geometric progression. But issue is leaf node is not gonna be same.
+
+    --> THETA(logn) --> LONGEST LEAF
+
+
+Given, T(n) = T(n-1) + T(n-2) + C
+            T(1) = C    
+            T(0) = C
+
+            consider late leaf - upper bound ---> c + 2C + 4c + .......
+                n terms
+                upper bound = O(2^n)
+
+
+
