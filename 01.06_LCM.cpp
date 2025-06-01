@@ -1,4 +1,5 @@
 // least common divisible by both
+// For co-prime - a*b
 
 int naive_lcm(int a, int b) {
     int res = max(a,b);
