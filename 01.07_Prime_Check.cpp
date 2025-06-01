@@ -1,5 +1,5 @@
 // To be prime - if it is only have of divisors are itself and one.
-// all even except '2' are not prime. '1' is not composite or not prime too.
+// all even except '2' are not prime. '1' is not composite or nor prime too.
 
 #include<stdio.h>
 
@@ -21,7 +21,7 @@ bool prime_check_naive(int n) {
 // 30 : (1, 30) (2, 15) (3,10) (5, 6)
 // 65 : (1, 65) (5, 13) (1, 25) (5, 5)
 // If (x,y) is a pair x * y = n and if x <= y, x*x <= n ==> x <= sqrt(n)
-// just to check till sqrt(n)
+// just to check till 2 to sqrt(n)
 
 bool prime_eff(int n) {
     if (n == 1) return false;
