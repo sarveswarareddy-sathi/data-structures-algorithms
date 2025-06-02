@@ -4,6 +4,18 @@
     --> Let 'b' be smaller than 'a', then gcd(a,b) = gcd(a-b, b)
     --> Lets say, 'd' = gcd(a,b) this means 'd' divides both 'a' and 'b'
     --> The 'd' must also divide a-b which is common divisor of 'a-b' and 'b'
+---> GCD Efficient Approach : GCD(a,b) = GCD(b, a%b)
+Example : The real-world analogy compares finding the GCD to dividing a rope (or chocolates) into equal pieces without leftovers. Each step involves cutting a portion, then working with the leftover part to find the largest possible equal division.
+Start with a long rope (or chocolates) and try dividing into equal pieces.
+Leftover portion is what couldn’t be evenly divided.
+Repeat the process with the leftover, treating it as the new total.
+Continue until there’s no leftover, meaning the last divisor used is the GCD.
+
+This step-by-step reduction mirrors the mathematical formula:
+gcd(𝑎,𝑏) = gcd(𝑏, 𝑎 mod 𝑏)
+where we swap the large number with the smaller one and replace the smaller number with the remainder until we reach zero.
+
+Note : Any common divisor of 'a' and 'b' will also divide a%b
 */
 
 // Naive Solution
