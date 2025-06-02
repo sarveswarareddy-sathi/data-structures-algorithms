@@ -1,6 +1,12 @@
 /*
 Palindrome Number : 78987. reverse number = number, if satisifies the return yes.align. 
 single number always palindrme
+---> INT max value should be less than 10^18
+---> Approach : first obtain reverse of given number and then Compare
+---> Obtaining Reverse - reverse = reverse * 10 + n%10
+---> % - obtain last digit and / - obtain digits without last digit
+---> Time Complexity - O(log10(n))
+---> Auxiliary Space - O(1)
 */
 
 #include <stdio.h>
