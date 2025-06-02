@@ -16,6 +16,8 @@ gcd(𝑎,𝑏) = gcd(𝑏, 𝑎 mod 𝑏)
 where we swap the large number with the smaller one and replace the smaller number with the remainder until we reach zero.
 
 Note : Any common divisor of 'a' and 'b' will also divide a%b
+Time Complexity: O(log(min(a,b))|
+Auxiliary Space: O(log(min(a,b))
 */
 
 // Naive Solution
