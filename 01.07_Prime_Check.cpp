@@ -1,5 +1,20 @@
-// To be prime - if it is only have of divisors are itself and one.
-// all even except '2' are not prime. '1' is not composite or nor prime too.
+/*
+---> A prime number is a natural number greater than 1, which is divisible by itself and '1'.
+---> fact1 : '1' cant be prime or composite.
+---> fact2 : All even except '2' are not prime. All prime numbers are ODD.
+---> fact3 : Every prime number can be represented as 6n+1 or 6n-1 except the prime 2 & 3. Where n is natural number.
+---> fact4 : '2' and '3' are only two consecutive prime numbers.
+---> fact5 : Every even integer > 2 can be represented as sum of two primes
+---> Theorem : natural number p > 1 is prime only if --> (p-1)! = (p-1)modp
+---> fermat therem : If 'n' is a prime, then for every a, 1 <= a < n
+        ---> a^(n-1) = 1modn
+---> theorem : The probability that a given, randomly chosen number n is prime is inversely proportional to its number of digits, or to the logarithm of n.
+---> Any odd integer greater than 5 can be expressed as a sum of an odd prime (all primes other than 2 are odd) and an even semiprime. A semiprime number is a product of two prime numbers. This is called Lemoine’s conjecture
+
+Properties :
+---> Every number greater than 1 can be divided by at least one prime number.
+---> 
+*/
 
 #include<stdio.h>
 
