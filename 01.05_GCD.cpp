@@ -1,7 +1,14 @@
-// Largest common divisor of both operands - GCD
+/*
+---> GCD : Largest common divisor of both operands
+---> GCD Naive Approach : Repeat Subraction, carrying the result forward each time until the result is equal to any one number being subtracted.
+    --> Let 'b' be smaller than 'a', then gcd(a,b) = gcd(a-b, b)
+    --> Lets say, 'd' = gcd(a,b) this means 'd' divides both 'a' and 'b'
+    --> The 'd' must also divide a-b which is common divisor of 'a-b' and 'b'
+*/
 
 // Naive Solution
-// Time complexity - O(min(a,b)) & Space Complexity - O(1)
+// Time complexity - O(min(a,b))
+//Space Complexity - O(1)
 int naive_gcd(int a, int b) {
     int res = min(a, b);
 
@@ -51,6 +58,8 @@ int gcd_aproch1(int a, int b) {
 // More Efficient Approach - Euclidean Algorithm
 // Using mod
 // gcd(a,b) = gcd(b,a % b)
+// Time Complexity: O(max(a,b))
+// Auxiliary Space: O(max(a,b))
 int eff_gcd(int a, int b) {
     if (b == 0) {
         return a;
