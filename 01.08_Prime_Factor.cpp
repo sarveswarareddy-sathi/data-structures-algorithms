@@ -1,8 +1,21 @@
-// Prime Number = 2, 3, 5, 7, 11, .........
-// Prime divisors called prime factors. Need to further rewrite the composite numbers to prime diviros
-
-
 /*
+Prime Factors : Prime divisors called prime factors. Need to further rewrite the composite numbers to prime divisors
+Prime Factors = 2, 3, 5, 7, 11, ......... 
+fact1 : There is only one unique set of prime factors for any number
+fact2 : Pollard's Rho - fast for a large composite number with small prime factors
+
+Naive Approach 1 : 
+---> step1 : While 'n' is divisible by '2', print 2 and divide 'n' by '2'
+---> After step 1 , 'n' will be ODD. Now start a loop from i = 3 to sqrt(n). While 'i' divides 'n', print 'i' and divide 'n' by 'i', increment by '2' and continue
+---> If 'n' is a prime number and is greater than '2', then 'n' will not become '1' by above two steps
+Time Complexity : O(sqrt(n))
+Auxiliary Space : O(1)
+
+Eff Approach 2 :
+1. check '2' and '3' divisibity
+2. check for 6n+1, 6n-1 iterting till sqrt(n)
+
+Example :
 1. compute power's of 'i' are dividing 'n' - example : '12'
     --> i = 2 then print '2'
     --> i = 2^2 then print '2' once more
