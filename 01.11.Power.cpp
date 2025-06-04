@@ -1,4 +1,18 @@
-//compute power x^n
+/*
+    compute power x^n :
+    
+    Naive Approach 1 : Multiply 'n' times 
+    Time Complexity : O(n)
+    Space Complexity : O(1)
+
+    Eff Approach 2 : Compute only one SUB-PROBLEM
+    --> power(x, n) = power(x, n / 2) * power(x, n / 2);        // if n is even
+    --> power(x, n) = x * power(x, n / 2) * power(x, n / 2);    // if n is odd
+
+    Time Complexity : O(log n)
+    Space Complexity : O(log n)
+    
+*/
 
 int power(int x, int n) {
     int res = 1;
