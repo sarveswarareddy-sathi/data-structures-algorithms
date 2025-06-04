@@ -12,8 +12,21 @@
 ---> Any odd integer greater than 5 can be expressed as a sum of an odd prime (all primes other than 2 are odd) and an even semiprime. A semiprime number is a product of two prime numbers. This is called Lemoine’s conjecture
 
 Properties :
----> Every number greater than 1 can be divided by at least one prime number.
----> 
+---> Every number greater than 1 can be divided by at least one prime number
+---> Every even integer > 2 can be represented as sum of two primes
+---> Two prime numbers are always co-prime to each other
+---> Each composite number can be factored into prime factors
+---> Co-prime means no common factors other than '1'. GCF is always '1'
+
+Checking PRIME or NOT?
+Naive Solution : Iterate through all numbers '2' to 'sqrt(n)' and check if it divides or not. n % i = 0
+Time Complexity : O(sqrt(n))
+Auxiliary Space : O(1)
+
+Approach 2 : 1st check 2 & 3 divisible or not. then check (6n+1) or (6n-1) are divisble or not. Iterate 5 to sqrt(n) by (i+6) increment and check i or i+2 divisible or not.
+and every composite number will have prime factor.
+Time Complexity : O(sqrt(n))
+Auxiliary Space : O(1)
 */
 
 #include<stdio.h>
