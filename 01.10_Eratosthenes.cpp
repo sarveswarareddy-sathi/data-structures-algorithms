@@ -1,5 +1,6 @@
 /*
  --> Prime numbers less than given number
+ Sieve of Eratosthenes : works well < 10 million or so
  naive - O(n*sqrt(n))
 */
 
